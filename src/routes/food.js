@@ -3,6 +3,9 @@
 const express = require('express');
 const {FoodModel, SequelizeDatabase} = require('../models');
 const router = express.Router();
+// const validator = require('../middleware/validator');
+
+// router.use(validator);
 
 router.post('/food', async (req, res, send) => {
   console.log('req body', req.body);
