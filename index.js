@@ -1,7 +1,7 @@
 'use strict';
 
 const {start} = require ('./src/server');
-const {sequelizeDatabase, foodModel, dogModel} = require('./src/models');
+const {sequelizeDatabase} = require('./src/models');
 
 sequelizeDatabase.sync()
   .then(() => {
