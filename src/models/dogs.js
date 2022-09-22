@@ -5,6 +5,7 @@ module.exports = (sequelizeDatabase, DataTypes) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
     },
     age: {
       type: DataTypes.STRING,

@@ -13,10 +13,10 @@ const DATABASE_URL = process.env.NODE_ENV === 'test'
 
 
 const sequelizeDatabase = new Sequelize(DATABASE_URL);
-const foodModel = foodSchema(sequelizeDatabase, DataTypes);
-const dogModel = dogSchema(sequelizeDatabase, DataTypes);
+const FoodModel = foodSchema(sequelizeDatabase, DataTypes);
+const DogModel = dogSchema(sequelizeDatabase, DataTypes);
 
-module.exports = {sequelizeDatabase, foodModel, dogModel};
+module.exports = {sequelizeDatabase, FoodModel, DogModel};
 
 // sequelizeDatabase.sync()
 //   .then(() => console.log('Successful Connection!'))
