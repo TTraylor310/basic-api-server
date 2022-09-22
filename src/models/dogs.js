@@ -1,18 +1,18 @@
 'use strict';
 
 module.exports = (sequelizeDatabase, DataTypes) => {
-  return sequelizeDatabase.define('food', {
+  return sequelizeDatabase.define('dogs', {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    ethnicity: {
+    age: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    spiciness: {
+    sex: {
       type: DataTypes.ENUM,
-      values: ['hot', 'medium', 'mild', 'none'],
+      values: ['male', 'female', 'unknown'],
       allowNull: true,
     },
   });
