@@ -1,12 +1,10 @@
 'use strict';
 
 require('dotenv').config();
-
 const {Sequelize, DataTypes} = require('sequelize');
 const foodSchema = require('../models/food');
 const dogSchema = require('../models/dogs');
 const ModelInterface = require('./modelInterface');
-
 
 const DATABASE_URL = process.env.NODE_ENV === 'test' 
   ? 'sqlite:memory' 

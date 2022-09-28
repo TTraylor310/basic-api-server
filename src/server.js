@@ -26,7 +26,7 @@ app.get('/', (req, res, next) => {
 app.get('/bad', (req, res, next) => {
   res.status(500).send('Bad route of 500');
 });
-
+ 
 app.use('*', notFound);
 app.use(errorHandler);
 
